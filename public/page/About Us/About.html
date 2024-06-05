@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>YatraXpress | Travel Agency</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ac42c3b1f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="About.css" rel="stylesheet"/>
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <style>
+      html,body{
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="../../assets/img/logo.png" style="width: 250px; height: 100px;" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" ><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Home</a></li>
+              <li class="nav-item dropdown px-3 px-lg-0">
+                <a class="d-inline-block ps-0 py-2 pe-3 text-decoration-none dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" aria-expanded="false" onclick="toggleDropdown('dropdownMenu')" >Trips</a>
+                <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem; display:none;" aria-labelledby="navbarDropdown" id="dropdownMenu">
+                  
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" aria-expanded="false" onclick="toggleSubmenu('submenu1')">Telangana</a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem; display:none;" aria-labelledby="navbarDropdown2" id="submenu1">
+                      <li><a class="dropdown-item" href="../ananthagirihills.html">Ananthagiri</a></li>
+                      <li><a class="dropdown-item" href="../hyderabad.html">Hyderabad city</br> tour</a></li>
+                      <li><a class="dropdown-item" href="#!">Warangal</a></li>
+                      <li><a class="dropdown-item" href="#!">Kuntala waterfalls</br> and basara</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" aria-expanded="false" onclick="toggleSubmenu('submenu2')">Andhra Pradesh</a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem; display:none;" aria-labelledby="navbarDropdown3" id="submenu2">
+                      <li><a class="dropdown-item" href="../Rajamundry.html">Rajahmundry</a></li>
+                      <li><a class="dropdown-item" href="../vizag.html">Vizag-Araku-</br>Lambasingi</a></li>
+                      <li><a class="dropdown-item" href="../ahobilam.html">Ahobilam</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown4" role="button" aria-expanded="false" onclick="toggleSubmenu('submenu3')">Kerala</a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem; display:none;" aria-labelledby="navbarDropdown4" id="submenu3">
+                      <li><a class="dropdown-item" href="../kerala.html">Kerala Trip</a></li>
+                      <li><a class="dropdown-item" href="../wayanad.html">Wayanad</a></li>
+                      <li><a class="dropdown-item" href="../munnar.html">Munnar</a></li>
+                      <li><a class="dropdown-item" href="../varkala.html">Varkala</a></li>
+                      <li><a class="dropdown-item" href="../kochi.html">Kochi</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown5" role="button" aria-expanded="false" onclick="toggleSubmenu('submenu4')">Tamilnadu</a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem; display:none;" aria-labelledby="navbarDropdown5" id="submenu4">
+                      <li><a class="dropdown-item" href="../chennai.html">Tamilnadu Trip</a></li>
+                      <li><a class="dropdown-item" href="../pondicherry.html">Pondi</a></li>
+                      <li><a class="dropdown-item" href="../coimbatore.html">Coimbatore</a></li>
+                      <li><a class="dropdown-item" href="../coimbatoreisha.html">Coimbatore (Isha)</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown6" role="button" aria-expanded="false" onclick="toggleSubmenu('submenu5')">Karnataka</a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem; display:none;" aria-labelledby="navbarDropdown6" id="submenu5">
+                      <li><a class="dropdown-item" href="../chikka.html">chickmangole</a></li>
+                      <li><a class="dropdown-item" href="../banglore.html">Banglore</a></li>
+                      <li><a class="dropdown-item" href="../mysore.html">Mysore-Banglore(includes other).</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="../manali.html">Manali</a></li>
+                  <li><a class="dropdown-item" href="../goa.html">Goa</a></li>
+                </ul>
+              </li>
+              
+              
+              
+
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#destination">About Us</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#booking">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+     <div class="container2">
+      <div class="container1">
+        <div class="contentLeft">
+          <div class="row">
+              <div class="imgWrapper" >
+                  <img src="../../assets/img/AboutUs/Tajmahal.jpg" alt="" >
+              </div>
+              <div class="imgWrapper">
+                  <img src="../../assets/img/AboutUs/munnar.jpg" alt="">
+              </div>
+              <div class="imgWrapper">
+                  <img src="../../assets/img/AboutUs/kerala.jpg" alt="">
+              </div>
+              <div class="imgWrapper">
+                  <img src="../../assets/img/AboutUs/manali4.jpg" alt="">
+              </div>
+          </div>
+        </div>
+        <div class="contentRight">
+          <div class="content">
+            <h4 style="padding-top: 20px;">Welcome To YatraXpress</h4>
+            <h2>About Us</h2>
+            <p>Introducing YatraXpress , your passport to affordable luxury travel! Founded by a dynamic team of young entrepreneurs, YatraXpress  is revolutionizing the travel industry with its unique blend of budget-friendly packages without compromising on quality or comfort.</br> At YatraXpress , we believe that everyone deserves to experience the thrill of travel without breaking the bank. That's why we meticulously curate each trip to ensure that our customers get the best value for their money. Whether you're dreaming of exploring exotic destinations, immersing yourself in vibrant cultures, or simply unwinding on a tranquil beach, Yatraxpress has the perfect itinerary for you.</p>
+            <a href="#ourstory">Our Story...</a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="container2" id="ourstory">
+        <div class="container1">
+    
+          <div class="contentRight">
+            <div class="content">
+              
+              <h2>Our Story</h2>
+              <p>Our commitment to quality is unwavering. From handpicked accommodations to expertly crafted experiences, every aspect of your journey is designed to exceed your expectations. We understand that comfort is key, which is why we go the extra mile to ensure that you travel in style and relaxation, no matter your budget.</br> What sets YatraXpress apart is our passion for creating unforgettable memories. With our personalized service and attention to detail, you can rest assured that your travel experience will be seamless from start to finish. Say goodbye to the stress of planning and hello to hassle-free adventures with YatraXpress.</p>
+              
+            </div>
+          </div>
+          <div class="contentLeft">
+            <div class="row">
+                <div class="imgWrapper" >
+                    <img src="../../assets/img/AboutUs/Goa.jpg" alt="" >
+                </div>
+                <div class="imgWrapper">
+                    <img src="../../assets/img/AboutUs/Kerala2.webp" alt="">
+                </div>
+                <div class="imgWrapper">
+                    <img src="../../assets/img/AboutUs/munnar2.JPG" alt="">
+                </div>
+                <div class="imgWrapper">
+                    <img src="../../assets/img/AboutUs/amrister.jpg" alt="">
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+
+
+        <section class="about section" id="about">
+            <div class="about__container container3 grid">
+              <h2 class="section__title-1">
+                <span>Founder/Head of Operations:</span>
+              </h2>
+          
+              <div class="about__perfil">
+                <div class="about__image">
+                  <img src="../../assets/img/aditya1.jpg" alt="image" class="about__img">
+          
+                  <div class="about__shadow"></div>
+          
+                  <div class="geometric-box"></div>
+          
+                  <div class="about__box"></div>
+                </div>
+              </div>
+          
+              <div class="about__info">
+                <h1>K Aditya Srivatsav</h1>
+                <p class="about__description">
+                    Meet K Aditya Srivatsav, the visionary founder and head of operations behind YatraXpress, a pioneering travel company that's redefining the industry landscape. </b>, As a first-time entrepreneur, Aditya's journey with YatraXpress is a testament to his unwavering dedication and relentless pursuit of excellence.</p>
+          
+                <ul class="about__list">
+                  <li class="about__item">
+                    <b>Reasons to choose Yatraxpress: </b>
+                  </li>
+                  <li>.Safety </li>
+                  <li>.cost efficient</li>
+                  <li>.customer service  </li>
+                  <li>.relaibility  </li>
+                </ul>
+          
+                <div class="about__buttons">
+                  <a href="#contact" class="button">
+                    <i class="ri-send-plane-line"></i> Contact Me
+                  </a>
+          
+                  <a href="https://www.linkedin.com/" target="_blank" class="button__ghost">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="../../vendors/@popperjs/popper.min.js"></script>
+    <script src="../../vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="../../vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    
+    <script src="../../assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
+  </body>
+
+</html>

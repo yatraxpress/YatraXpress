@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>YatraXpress | Travel Agency</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/77232aa128.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ac42c3b1f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="ananthagirihills.css" rel="stylesheet"/>
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <style>
+      html,body{
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="../assets/img/logo.png" style="width: 250px; height: 100px;" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="../index.html">Home</a></li>
+              <li class="nav-item dropdown px-3 px-lg-0">
+                <a class="d-inline-block ps-0 py-2 pe-3 text-decoration-none dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" aria-expanded="false" onclick="toggleDropdown('dropdownMenu')">Trips</a>
+                <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem; display:none;" aria-labelledby="navbarDropdown" id="dropdownMenu">
+                  
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" aria-expanded="false" onclick="toggleSubmenu('submenu1')">Telangana</a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem; display:none;" aria-labelledby="navbarDropdown2" id="submenu1">
+                      <li><a class="dropdown-item" href="/public/page/ananthagirihills.html">Ananthagiri</a></li>
+                      <li><a class="dropdown-item" href="/public/page/hyderabad.html">Hyderabad city</br> tour</a></li>
+                      <li><a class="dropdown-item" href="#!">Warangal</a></li>
+                      <li><a class="dropdown-item" href="#!">Kuntala waterfalls</br> and basara</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown3" role="button" aria-expanded="false" onclick="toggleSubmenu('submenu2')">Andhra Pradesh</a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem; display:none;" aria-labelledby="navbarDropdown3" id="submenu2">
+                      <li><a class="dropdown-item" href="/public/page/Rajamundry.html">Rajahmundry</a></li>
+                      <li><a class="dropdown-item" href="/public/page/vizag.html">Vizag-Araku-</br>Lambasingi</a></li>
+                      <li><a class="dropdown-item" href="/public/page/ahobilam.html">Ahobilam</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown4" role="button" aria-expanded="false" onclick="toggleSubmenu('submenu3')">Kerala</a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem; display:none;" aria-labelledby="navbarDropdown4" id="submenu3">
+                      <li><a class="dropdown-item" href="/public/page/kerala.html">Kerala Trip</a></li>
+                      <li><a class="dropdown-item" href="/public/page/wayanad.html">Wayanad</a></li>
+                      <li><a class="dropdown-item" href="/public/page/munnar.html">Munnar</a></li>
+                      <li><a class="dropdown-item" href="/public/page/varkala.html">Varkala</a></li>
+                      <li><a class="dropdown-item" href="/public/page/kochi.html">Kochi</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown5" role="button" aria-expanded="false" onclick="toggleSubmenu('submenu4')">Tamilnadu</a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem; display:none;" aria-labelledby="navbarDropdown5" id="submenu4">
+                      <li><a class="dropdown-item" href="/public/page/chennai.html">Tamilnadu Trip</a></li>
+                      <li><a class="dropdown-item" href="/public/page/pondicherry.html">Pondi</a></li>
+                      <li><a class="dropdown-item" href="/public/page/coimbatore.html">Coimbatore</a></li>
+                      <li><a class="dropdown-item" href="/public/page/coimbatoreisha.html">Coimbatore (Isha)</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown6" role="button" aria-expanded="false" onclick="toggleSubmenu('submenu5')">Karnataka</a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem; display:none;" aria-labelledby="navbarDropdown6" id="submenu5">
+                      <li><a class="dropdown-item" href="/public/page/chikka.html">chickmangole</a></li>
+                      <li><a class="dropdown-item" href="/public/page/banglore.html">Banglore</a></li>
+                      <li><a class="dropdown-item" href="/public/page/mysore.html">Mysore-Banglore(includes other).</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="/public/page/manali.html">Manali</a></li>
+                  <li><a class="dropdown-item" href="/public/page/goa.html">Goa</a></li>
+                </ul>
+              </li>
+              
+              
+              
+
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="../page/About Us/About.html">About Us</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#contact-us">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+
+
+      <div class="d-none d-sm-none d-md-block" id="top">
+        <div
+          class="banner-section-bg-container d-flex justify-content-center flex-column pt-9">
+          <div class="" >
+               <div class="" style="width: 50%;">
+                
+               <h1 class="heading four animate fadeLeft">Ananthagiri Hills</h1>
+               <p class="heading1 text-animation" style="margin: 0;">Embracing the tranquility and lush greenery of Ananthagiri Hills.</p>
+               <div class="d-flex flex-row flex-wrap">
+                <button id="bottone1" ><a href="#overview"><strong>Explore Now</strong></a></button>
+               
+              </div>
+               </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+      class="banner-section-bg d-flex flex-column justify-content-center pt-9 d-block d-sm-block d-md-none"
+    >
+    <div class="background_shade1" >
+        <div style="">
+        <h1 class="heading_small four animate fadeLeft" style="font-weight: bold;">Ananthagiri Hills</h1>
+        <p class="heading1_small text-animation" style="margin: 0;">Embracing the tranquility and lush greenery of Ananthagiri Hills.</p>
+        <div class="">
+          <button id="bottone2" ><a href="#overview"><strong>Explore Now</strong></a></button>
+      </div>
+        </div>
+   </div>
+    
+      
+    </div>
+      
+    
+
+ 
+
+
+      <div class="details-container1 d-none d-sm-none d-md-block">
+        <div class="details-container">
+            <div class="d-flex flex-row">
+                <i class="fa fa-clock-o mr-5 details" aria-hidden="true" ><span class="pl-3" style="font-family: ROBOTO;">1D/1N</span></i>
+                <i class="fa fa-calendar" aria-hidden="true"><span class="pl-3" style="font-family: ROBOTO;">Availability:Through out the week</span></i>
+            </div>
+            <div class="d-flex flex-row pt-3">
+              <i class="fa-solid fa-plane-departure"><span class="pl-3" style="font-family: ROBOTO; margin-right: 80px;">Hyderabad</span></i>
+                <i class="fa-solid fa-plane-arrival"><span class="pl-3" style="font-family: ROBOTO;">Hyderabad</span></i>
+            </div>
+            <div class="d-flex flex-row pt-3">
+                <i class="fa fa-user" aria-hidden="true"><span class="pl-3 " style="font-family: ROBOTO; margin-right: 80px;">Min Age:12</span></i>
+                <i class="fa fa-users" aria-hidden="true"><span class="pl-3" style="font-family: ROBOTO;">Max people:30</span></i>
+            </div>
+
+        </div>
+        <div class="wrapper">
+        <div class="item">
+          <h2>Price</h2>
+        <div class="enquiry-container">
+          <h1 class="enquiry-heading">Ananthagiri Hills Package</h1>
+          <i class="fa-solid fa-tag" ><span class="pl-3" style="font-family: ROBOTO;">From <del>&#8377 3,999/-</del>&#8377 1,699/- </span></i>
+        </div>
+        <div class="select-menu">
+         
+           
+            <input type="date" class="calender"/>
+          
+          
+        </div>
+          
+          <p>Ananthagiri Hills: Where every path leads to a new adventure.
+          </p>
+          <button class="enquiry-button" >
+           <a href="https://wa.me/919885899393"><span style="color: white;">Enquiry Now</span></a>
+        </button>
+          <div class="readmore">More</div>
+        </div>
+        </div>
+
+
+          <nav class="navbar1">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#">Itinerary</a></li>
+                <li><a href="#costing">Costing</a></li>
+                <li><a href="#">Other Info</a></li>
+            </ul>
+        </nav>
+
+
+      </div>
+
+    <div class="d-block d-sm-block d-md-none">
+      <div class="">
+        <div class="payment1">
+          <h2 class="price-small">Price</h2>
+          <div class="form1">
+            <div class="card1 space1 icon-relative1 expanded">
+              <h1 class="card-heading">Ananthagiri Hills Package</h1>
+              <i class="fa-solid fa-tag" ><span class="pl-3" style="font-family: ROBOTO;">From <del>&#8377 3,999/-</del>&#8377 1,699/- </span></i>
+            </div>
+            <div class="select-menu">
+              <input type="date" class="calender1"/>
+          </div>
+            
+          </div>
+          <div class="btn d-flex flex-row justify-content-center">
+            Enquire Now
+          </div> 
+        </div>
+      </div>
+
+      <div class="details-container1">
+        <div class="d-flex flex-row p-2">
+            <i class="fa fa-clock-o details1" aria-hidden="true" ><span class="" style="font-family: ROBOTO;">1D/1N</span></i>
+            <i class="fa fa-calendar" aria-hidden="true"><span class="" style="font-family: ROBOTO;">Availability:Through out the week</span></i>
+        </div>
+        <div class="d-flex flex-row pt-3 pl-2 pr-2">
+          <i class="fa-solid fa-plane-departure"><span class="pl-3" style="font-family: ROBOTO; margin-right: 50px;">Hyderabad</span></i>
+          <i class="fa-solid fa-plane-arrival"><span class="pl-2" style="font-family: ROBOTO;">Hyderabad</span></i>
+        </div>
+        <div class="d-flex flex-row pt-3 pl-2 pr-3">
+            <i class="fa fa-user" aria-hidden="true"><span class="pl-2" style="font-family: ROBOTO; margin-right: 50px;">Min Age:12</span></i>
+            <i class="fa fa-users" aria-hidden="true"><span class="pl-2" style="font-family: ROBOTO;">Max people:30</span></i>
+        </div>
+
+    </div>
+
+
+      </div>
+
+      <div class="overview-container">
+        <h1 class="overview-heading" id="overview">OVERVIEW:</h1>
+        <div id="costing">
+        <h1 class="costing-heading">COSTING: FROM 1,699/-</h1>
+        <div class="overview-responsive">
+            <h1 class="cost-heading">COST INCLUDES:</h1>
+            <ul class="cost">
+                <li class=""><i class="fa fa-check mr-3" aria-hidden="true"></i>To and fro train tickets sleeper class</li>
+                <li><i class="fa fa-check mr-3" aria-hidden="true"></i>Hotel accommodation</li>
+                <li><i class="fa fa-check mr-3" aria-hidden="true"></i>Pick and drop (railway station/airport)</li>
+                <li><i class="fa fa-check mr-3" aria-hidden="true"></i>24/7 customer support </li>
+                <li><i class="fa fa-check mr-3" aria-hidden="true"></i>Basic first aid</li>
+                <li><i class="fa fa-check mr-3" aria-hidden="true"></i>Driver food and allowances</li>
+                <li><i class="fa fa-check mr-3" aria-hidden="true"></i>Meals</li>
+                
+                
+            </ul>
+        </div>
+        <div class="overview-responsive">
+            <h1 class="cost-heading">COST EXCLUDES:</h1>
+            <ul class="cost">
+                <li><i class="fa fa-times mr-3" aria-hidden="true"></i>Personal expenses
+                </li>
+                <li><i class="fa fa-times mr-3" aria-hidden="true"></i>GST
+                </li>
+                <li><i class="fa fa-times mr-3" aria-hidden="true"></i>Optional activities 
+                </li>
+                <li><i class="fa fa-times mr-3" aria-hidden="true"></i>Insurance unless explicitly stated as included 
+                </li>
+                <li><i class="fa fa-times mr-3" aria-hidden="true"></i>Any service which is not mentioned in inclusions
+                </li>
+                
+                
+            </ul>
+        </div>
+        </div>
+
+      </div>
+      <div id="ts-back-to-top-wrap">
+        <a href="#top" id="ts-back-to-top" class="smoothscroll-up hello"> <i class="fa fa-arrow-up"></i></a>
+     </div>
+        <!--/.bg-holder-->
+
+        <section class="pb-0 pb-lg-4" id="contact-us" >
+
+          <div class="container" >
+            <div class="row" >
+              <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0"> <img class="mb-4" src="../assets/img/logo.png" width="150" alt="jadoo" />
+                <p class="fs--1 text-secondary mb-0 fw-medium">Yatraxpress ensures seamless journeys, where trust is woven into every itinerary, making exploration a comforting experience</p>
+              </div>
+              <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
+                <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Company</h4>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">About</a></li>
+                  <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Careers</a></li>
+                  <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Mobile</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
+                <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Contact</h4>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">K.Aditya Srivatsav</a></li>
+                  <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Phone number : 9885899393 / 42015343</a></li>
+                  <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Email : yatraxpress04@gmail.com</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
+                <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">More</h4>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Airlinefees</a></li>
+                  <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Airline</a></li>
+                  <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Low fare tips</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1">
+                <div class="icon-group mb-4"> <a class="text-decoration-none icon-item shadow-social" id="facebook" href="#!"><i class="fab fa-facebook-f"> </i></a><a class="text-decoration-none icon-item shadow-social" id="instagram" href="#!"><i class="fab fa-instagram"> </i></a><a class="text-decoration-none icon-item shadow-social" id="twitter" href="#!"><i class="fab fa-twitter"> </i></a></div>
+  
+              </div>
+            </div>
+          </div><!-- end of .container-->
+  
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+  
+  
+        <div class="py-5 text-center">
+          <p class="mb-0 text-secondary fs--1 fw-medium">All rights reserved@YatraXpress.co </p>
+        </div>
+
+
+
+   </main>
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="../vendors/@popperjs/popper.min.js"></script>
+    <script src="../vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    
+    <script src="../assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
+  </body>
+
+</html>
