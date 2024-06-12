@@ -62,35 +62,9 @@ var rgbaColor = function rgbaColor() {
   return "rgba(".concat(hexToRgb(color), ", ").concat(alpha, ")");
 };
 /* --------------------------------- Colors --------------------------------- */
-function toggleDropdown(id) {
-  var dropdownMenu = document.getElementById(id);
-  var allMenus = document.querySelectorAll('.dropdown-menu');
-  allMenus.forEach(function(menu) {
-    if (menu !== dropdownMenu && menu.style.display === "block") {
-      menu.style.display = "none";
-    }
-  });
-  if (dropdownMenu.style.display === "block") {
-    dropdownMenu.style.display = "none";
-  } else {
-    dropdownMenu.style.display = "block";
-  }
-}
 
-function toggleSubmenu(id) {
-  var submenu = document.getElementById(id);
-  var allSubmenus = document.querySelectorAll('.dropdown-menu .dropdown-menu');
-  allSubmenus.forEach(function(sub) {
-    if (sub !== submenu && sub.style.display === "block") {
-      sub.style.display = "none";
-    }
-  });
-  if (submenu.style.display === "block") {
-    submenu.style.display = "none";
-  } else {
-    submenu.style.display = "block";
-  }
-}
+
+
 
 
 
